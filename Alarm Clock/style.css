@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.clock-wrapper{
+    width: 400px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.822);
+    padding: 1.58rem 2.5rem;
+    border-radius: 1rem;
+}
+
+.alarm-wrapper{
+    background-color: grey;
+    box-shadow: 0 0 10px inset rgb(221, 221, 221);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.title{
+    margin-bottom: 0.5rem;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+.hours-wrapper{
+    width: 100%;
+}
+.input{
+    border: none;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Jersey 10", sans-serif;
+    color: red;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.alarm-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+.alarm-btns button{
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    border: none;
+    outline:none;
+    font-family: "Lato", sans-serif;
+    border-radius: 0.5rem;
+}
+.start-btn{
+    background-color: rgba(6, 204, 6, 0.726);
+    color: white;
+}
+.stop-btn{
+    background-color: red;
+    color: white;
+}
+
+
+.current-date-wrapper{
+    margin-top: 2rem;
+}
+.date{
+    font-family: "Lato", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.pause-btn{
+    display: none;
+}

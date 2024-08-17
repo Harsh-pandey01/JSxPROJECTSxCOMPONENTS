@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    
+    <div class="clock-wrapper">
+        <div class="alarm-wrapper">
+            <div class="hours-wrapper">
+                <p class="title">Hours</p>
+                <input type="number" min="0" max="60" class="hour-input input" placeholder="00" >
+            </div>
+            
+            <div class="hours-wrapper">
+                <p class="title">Mins</p>
+                <input type="number" min="0" max="60" class="mins-input input" placeholder="00" >
+            </div>
+            <div class="hours-wrapper">
+                <p class="title">Sec</p>
+                <input type="number" min="0" max="60" class="secs-input input" placeholder="00" >
+            </div>
+        </div>
+        <div class="alarm-btns">
+            <button class="start-btn">
+                Start
+            </button>
+            <button class="pause-btn">
+                Pause
+            </button>
+            <button class="stop-btn">
+                Stop
+            </button>
+        </div>
+        <div class="current-date-wrapper">
+        <p class="date">20 Sep 2024</p>
+        </div>
+    </div>
+
+</body>
+</html>
